@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend</title>
+</head>
+<body>
+{% extends "index.html" %}
+
+{% block content %}
+    {% if name == 'child' %}
+    <h2>Лекарства для детей. <br/>
+        "Можно давать только парацетамол и антигриппин"
+    </h2>
+    {% else %}
+    <h2>Лекарства для взрослых. <br/>
+        "Можно принимать любые лекаства"
+    </h2>
+    {% endif %}
+{% endblock %}
+
+</body>
+</html>
